@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
 const { app } = require('./Firebase/Firebase')
 const { db } = require('./Firebase/FirebaseAdmin');
 
@@ -76,9 +76,42 @@ routes.post('/Login', async (req: LoginRequest, res: LoginResponse): Promise<any
         if (error.code === 'auth/wrong-password' || error.code === 'auth/user-not-found' || error.code === 'auth/invalid-credential') {
             return res.status(401).json({ message: "Senha ou email inválidos"});
         }
-        return res.status(500).json({ message: "Erro desconhecido/Erro de banco de dados", error: error.message });
+        return res.status(500).json({ message: "Erro desconhecido/Erro de banco de dados"});
     }
 });
 
+
+// Redefinir senha:
+
+type RedefSenhaBody =  {
+    email: string;
+}
+
+interface RedefSenhaRequest extends Request {
+    body: RedefSenhaBody;
+}
+
+type RedefSenhaResponse = Response<{
+    message: string;
+}>
+
+routes.post('/RedefinirSenha', async (req: RedefSenhaRequest, res: RedefSenhaResponse): Promise<any> => {
+    const auth = getAuth(app);
+    const { email } = req.body;
+
+    try {
+        await sendPasswordResetEmail(auth, email); // se der ruim, manda exception....
+
+        return res.status(200).json({ message: "Caso o e-mail estiver cadastrado, enviamos um link de redefinição" })
+
+    } catch (error: any) {
+        if (error.code === 'auth/invalid-email')
+            return res.status(400).json({ message: "Email inválido inserido" }) //400 = Bad Request, nao foi possivel concluir a operação
+        else if (error.code === 'auth/user-not-found')
+            return res.status(404).json({ message: "Email não encontrado na base de dados" }) // 404 = Not found, nao achou
+        else
+            return res.status(500).json({ message: "Erro desconhecido" }); //500 internal server error, ou seja, deu merda mas nao se sabe qual
+    }
+});
 
 export default routes;
