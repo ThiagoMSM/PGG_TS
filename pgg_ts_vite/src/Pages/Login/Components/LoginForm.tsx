@@ -1,26 +1,44 @@
 import { useState } from "react"
 import "../PagLogin.css";
+import EfetuarLogin from "../Functions/EfetuarLogin";
+import MensagemRetorno from "./MensagemRetorno";
+import ButtonCarregar from "../../../Components/Buttons/ButtonCarregar";
+type retorno = {
+    msg: string,
+    style: string
+}
+
 function LoginForm() {
-    
+
+    // formulário:
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>): string => {
+    // reposta e style da msg (idealmente seria outsourced pra algum outro arquivo, mas oh well)
+    const [resposta, setResposta] = useState<string>("");
+    const [style, setStyle] = useState<string>("");
+
+    // variavel de controle
+    const [carregando, setCarregando] = useState<boolean>(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
-        return "msg";
+        setCarregando(true)
+        const { msg, style }: retorno = await EfetuarLogin({ email, password });
+        setResposta(msg);
+        setStyle(style);
+        setCarregando(false);
     };
-    
+
     return (
         <>
             <div className="Container_login">
                 <div className="linha-com-texto">
                     <span className="texto-no-meio">Acesse a sua conta</span>
                 </div>
-                <form
-                    onSubmit={(e) => {
-                        handleSubmit(e);
-                    }}
-                >
+                <form onSubmit={(e) => { handleSubmit(e); }}>
+
+                    <MensagemRetorno msg={resposta} setObj={setResposta} style={style} />
                     <div className="grupo-formulario">
                         <label htmlFor="email">Digite seu Email:</label>
                         <input
@@ -41,8 +59,9 @@ function LoginForm() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
-                    <button>Enviar</button>
-                   
+
+                    <ButtonCarregar carregando={carregando} texto="Enviar"/>
+
                 </form>
             </div>
         </>

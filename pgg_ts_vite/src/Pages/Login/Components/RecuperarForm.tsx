@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function RecuperarForm() {
-    const [emailRecuperacao, setEmailRecuperacao] = useState<string>();
+    const [emailRecuperacao, setEmailRecuperacao] = useState<string>("");
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>): string => {
         e.preventDefault();
@@ -13,11 +13,7 @@ function RecuperarForm() {
             <div className="linha-com-texto">
                 <span className="texto-no-meio">Recuperação de senha</span>
             </div>
-            <form
-                    onSubmit={(e) => {
-                        handleSubmit(e);
-                    }}
-                >
+            <form onSubmit={(e) => {handleSubmit(e);}}>
                 <div className="grupo-formulario">
                     <label htmlFor="email" className="textoSenha">
                         Informe seu e-mail para receber as instruções de

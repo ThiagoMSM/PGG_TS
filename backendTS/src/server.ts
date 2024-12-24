@@ -1,14 +1,14 @@
 import express from 'express';
 import { Request, Response } from 'express';
-// const routes = require('./routes')
-// const cors = require('cors');
+import routes from './routes';
+import cors from 'cors';
 const app = express(); 
 
 //npm install
 
-app.use(express.json());
-// app.use(cors());
-// app.use(routes);
+app.use(express.json()); 
+app.use(cors());
+app.use(routes);
 
 app.get('/', (req: Request,res:Response) => {
     res.send('teste');
