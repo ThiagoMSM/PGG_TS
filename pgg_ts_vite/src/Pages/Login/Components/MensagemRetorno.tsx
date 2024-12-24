@@ -7,7 +7,7 @@ type Props = {
     delay?: number;
 };
 
-function MensagemRetorno({ msg, style, setObj, delay=2000 }: Props) {
+function MensagemRetorno({ msg, style, setObj, delay=3000 }: Props) {
     const exibeMsg = () =>{
         new Promise<void>((resolve) => {
             setTimeout(() =>{

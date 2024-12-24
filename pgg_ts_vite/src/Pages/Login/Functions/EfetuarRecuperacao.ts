@@ -15,7 +15,7 @@ type resposta = {
 
 async function EfetuarRecuperacao({ emailRecuperacao }: RedefinirSenhaProp): Promise<any> {
     try {
-        const response: responseType = await axios.post('http://localhost:4000/Login', {
+        const response: responseType = await axios.post('http://localhost:4000/RedefinirSenha', {
             email: emailRecuperacao,
         });
         const msg: string = response.data.message;
