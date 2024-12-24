@@ -1,0 +1,48 @@
+Básicos:
+
+Tudo em Typescript gira em torno de TIPOS.
+É benéfico pois você força dados a obedecer certos tipos de dados
+Exemplo, dados de tipo string não aceitam valores numéricos, booleanos, nem qualquer outra merda
+Pq isso é bom? Minimiza erros, lembra do erro maluco que deu com o BD local? Onde páginas não carregavam, algumas diziam que "includes" não era uma função, aquela merda toda?
+Com TypeScript esses erros não existiriam, pois os dados tem uma ÚNICA forma de comportar, e VOCÊ decide qual é, não o javascript (como antigamente)
+
+Exemplo:
+
+let teste: string = "sou uma string"; 
+
+Anatomia:
+let: Classe de variável (let, const, var)
+teste: Nome da variável
+string: tipo da varíavel (a partir de agora, teste só aceita string)
+= "sou uma string": valor
+
+Como usar com react?
+
+const [teste, setTeste] = useState<string>("")
+
+Dessa forma 👍
+
+-----------------------------------------------------
+Importantes:
+
+Algumas vezes, VOCÊ criará os tipos, sim, você literalmente cria um tipo pra linguagem obedecer, se isso não for do caralho, não sei o que é 
+
+Quais vezes seriam essas? 2 bem utilizadas são: Definir objetos e passar props
+EscolheForm.tsx mostra como e pq isso é utilizado
+
+Tipos funcionam com chave e valor, então um tipo funciona muito bem como um objeto
+
+Agr, como crio um tipo?
+
+Vc tem 2 opções, com a keyword type, ou com interface.
+São muito semelhantes, mas prefira type ao invés de interface, pois type é um pouco mais leve na performance
+
+exemplo:
+
+type meuTipo = "ValorCustom"
+
+meuTipo é SOMENTE a string "ValorCustom", nenhum outro valor funciona.
+
+
+cobre muito mais coisas:
+https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html 
