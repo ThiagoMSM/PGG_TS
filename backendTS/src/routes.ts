@@ -98,7 +98,6 @@ type RedefSenhaResponse = Response<{
 routes.post('/RedefinirSenha', async (req: RedefSenhaRequest, res: RedefSenhaResponse): Promise<any> => {
     const auth = getAuth(app);
     const { email } = req.body;
-    console.log("aaa")
     try {
         await sendPasswordResetEmail(auth, email); // se der ruim, manda exception....
 

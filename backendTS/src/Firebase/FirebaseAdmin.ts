@@ -1,10 +1,10 @@
 import admin from 'firebase-admin';
-const serviceAccount = require('./zetta4-3b4d5-firebase-adminsdk-gg5kx-2331bdcd30.json'); 
+const serviceAccount = require('./zetta2-firebase-adminsdk-9avfc-34e9e39aca.json'); 
 
 // Inicialize o Firebase Admin SDK com as credenciais
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://Zetta4.firebaseio.com"
+  databaseURL: "https://zetta2.firebaseapp.com"
 });
 
 const db = admin.firestore();
