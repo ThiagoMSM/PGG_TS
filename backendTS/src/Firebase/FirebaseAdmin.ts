@@ -1,12 +1,14 @@
-import admin from 'firebase-admin';
-const serviceAccount = require('./zetta2-firebase-adminsdk-9avfc-34e9e39aca.json'); 
+import * as admin from 'firebase-admin';
+import serviceAccount from './zetta69-50d36-firebase-adminsdk-fbsvc-7f006cb97e.json';
+import { ServiceAccount } from 'firebase-admin';
 
-// Inicialize o Firebase Admin SDK com as credenciais
+const LocalserviceAccount: ServiceAccount = serviceAccount as ServiceAccount;
+
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://zetta2.firebaseapp.com"
+  credential: admin.credential.cert(LocalserviceAccount),
+  databaseURL: "https://zetta69.firebaseapp.com"
 });
 
 const db = admin.firestore();
 
-module.exports = { admin, db };
+export { admin, db };

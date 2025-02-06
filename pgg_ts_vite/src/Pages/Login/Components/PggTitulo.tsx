@@ -11,7 +11,7 @@ function PggTitulo() {
                             x="50%"
                             y="60%"
                             dy=".35em"
-                            text-anchor="middle"
+                            textAnchor="middle"
                         >
                             Pequeno Grande Gestor
                         </text>

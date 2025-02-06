@@ -1,16 +1,16 @@
-// Firebase/Firebase.js
+
 import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAJSHrvSJr4j5u1B2SMukVD6gfWawanwZ8",
-  authDomain: "zetta2.firebaseapp.com",
-  projectId: "zetta2",
-  storageBucket: "zetta2.firebasestorage.app",
-  messagingSenderId: "1062649011076",
-  appId: "1:1062649011076:web:de5f12c809fd1814945bd1"
+  apiKey: "AIzaSyA2icHjwazGajn430R3G2SEp_jYeLak1co",
+  authDomain: "zetta69-50d36.firebaseapp.com",
+  projectId: "zetta69-50d36",
+  storageBucket: "zetta69-50d36.firebasestorage.app",
+  messagingSenderId: "374335698100",
+  appId: "1:374335698100:web:af1a72d59c2f9c246813e1",
+  measurementId: "G-Z7PGNYK0TX"
 };
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 
-
-module.exports = { app };
+export { app };

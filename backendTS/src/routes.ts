@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
-const { app } = require('./Firebase/Firebase')
-const { db } = require('./Firebase/FirebaseAdmin');
+import { app } from './Firebase/Firebase';
+import { db } from './Firebase/FirebaseAdmin';
 
 const routes = express.Router();
 
@@ -13,7 +13,7 @@ routes.get('/teste', async (req: Request, res: Response) => {
 
 
 // Login types, interfaces, tudo aí:
-type LoginRequestBody =  {
+type LoginRequestBody = {
     email: string;
     password: string;
 }
@@ -22,7 +22,7 @@ interface LoginRequest extends Request {
     body: LoginRequestBody;
 }
 
-type UserData = {
+interface UserData {
     CPF: string;
     Celular: string;
     Email: string;
@@ -60,13 +60,13 @@ routes.post('/Login', async (req: LoginRequest, res: LoginResponse): Promise<any
             throw new Error("Erro crítico ao buscar o usuário");
         }
 
-
         const userDoc = await db.collection('Logins').doc(user.uid).get();
         if (!userDoc.exists) {
             return res.status(404).json({ message: "Sem usuários com essas credenciais" });
         }
 
-        const userData:UserData = userDoc.data();
+        const userData: UserData = userDoc.data() as UserData;
+
         return res.status(200).json({
             message: 'Sucesso',
             id: user.uid,
@@ -74,16 +74,17 @@ routes.post('/Login', async (req: LoginRequest, res: LoginResponse): Promise<any
         });
     } catch (error: any) {
         if (error.code === 'auth/wrong-password' || error.code === 'auth/user-not-found' || error.code === 'auth/invalid-credential') {
-            return res.status(401).json({ message: "Senha ou email inválidos"});
+            return res.status(401).json({ message: "Senha ou email inválidos" });
         }
-        return res.status(500).json({ message: "Erro desconhecido/Erro de banco de dados"});
+        console.log(error);
+        return res.status(500).json({ message: "Erro desconhecido/Erro de banco de dados" });
     }
 });
 
 
 // Redefinir senha:
 
-type RedefSenhaBody =  {
+type RedefSenhaBody = {
     email: string;
 }
 

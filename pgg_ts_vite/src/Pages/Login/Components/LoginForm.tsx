@@ -24,10 +24,14 @@ function LoginForm() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
         setCarregando(true)
+
         const { msg, style }: retorno = await EfetuarLogin({ email, password });
+        
         setResposta(msg);
         setStyle(style);
+        
         setCarregando(false);
+        console.log("DBA")
     };
 
     return (
