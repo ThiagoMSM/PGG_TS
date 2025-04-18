@@ -35,7 +35,7 @@ Tipos funcionam com chave e valor, então um tipo funciona muito bem como um obj
 Agr, como crio um tipo?
 
 Vc tem 2 opções, com a keyword type, ou com interface.
-São muito semelhantes, mas prefira type ao invés de interface, pois type é um pouco mais leve na performance
+São muito semelhantes, segundo algumas pessoas, evite a interface. Mas na realidade tudo depende do que vai deixar o seu código mais legível.
 
 exemplo:
 
@@ -43,6 +43,11 @@ type meuTipo = "ValorCustom"
 
 meuTipo é SOMENTE a string "ValorCustom", nenhum outro valor funciona.
 
+ex:
+
+let str: meuTipo = "teste" // -> Erro!!!!
+
+let str: meuTipo = "ValorCustom" // -> Tranquilo!!!!
 
 cobre muito mais coisas:
 https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html 

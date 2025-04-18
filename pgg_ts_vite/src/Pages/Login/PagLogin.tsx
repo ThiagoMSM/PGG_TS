@@ -19,7 +19,7 @@ function Home() {
         </div>
         <div className="container-formulario">
           <div className="conteudo-formulario">
-            <PggTitulo />  {/* Componente com o título (Pequeno Grande Gestor) */}
+            <PggTitulo />  
             <EscolheForm>
               <LoginForm />
               <RecuperarForm />

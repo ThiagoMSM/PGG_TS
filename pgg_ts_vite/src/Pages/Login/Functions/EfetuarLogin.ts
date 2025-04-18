@@ -28,7 +28,6 @@ type resposta = {
 
 async function EfetuarLogin({ email, password }: loginProps) { //todo return vai pro frontend
     try {
-        console.log("absurdo")
         const response: responseType = await axios.post('http://localhost:4000/Login', {
             email: email,
             password: password
