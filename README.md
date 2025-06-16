@@ -34,31 +34,23 @@ This version is a complete **TypeScript** rewrite, focused on security, reliabil
 ## About us / Sobre nós
 
 🇧🇷  
-RigelTech é uma iniciativa formada por 9 membros dedicados à tecnologia e inovação. Ainda não somos uma empresa formal, mas estamos construindo algo promissor juntos.
+RigelTech é uma iniciativa formada por 5 membros dedicados à tecnologia e inovação. Ainda não somos uma empresa formal, mas estamos construindo algo promissor juntos.
 
 
 ### Time e Funções
 - **Miguel Lima:** CEO  
 - **Thiago Marques:** CTO / Líder Técnico / Desenvolvedor Chefe  
 - **Gabriel Marques:**  Vice-Líder Técnico / Desenvolvedor Full-Stack  
-- **Marcos Oliveira:** Desenvolvedor Frontend  
-- **Gustavo Oliveira:** Desenvolvedor Frontend  
-- **Pedro Carrion:** Desenvolvedor Backend  
-- **Lucas Oliveira:** Desenvolvedor Backend  
-- **Deivyd Lima:** Desenvolvedor / Colaborador Geral  
+- **Marcos Oliveira:** Desenvolvedor
 - **Guilherme Tiago:** Administrador de Banco de Dados (DBA) / Desenvolvedor
 
 
 🇺🇸  
-RigelTech is an initiative formed by 9 members dedicated to technology and innovation. We are not yet a formal company, but we are building something promising together.
+RigelTech is an initiative formed by 5 members dedicated to technology and innovation. We are not yet a formal company, but we are building something promising together.
 
 ### Team and Roles
 - **Miguel Lima:** CEO  
 - **Thiago Marques:** CTO / Tech Lead / Head Developer  
 - **Gabriel Marques:** Vice Tech Lead / Full-Stack Developer  
-- **Marcos Oliveira:** Frontend Engineer  
-- **Gustavo Oliveira:** Frontend Engineer  
-- **Pedro Carrion:** Backend Engineer  
-- **Lucas Oliveira:** Backend Engineer  
-- **Deivyd Lima:** General Contributor / Developer  
+- **Marcos Oliveira:** Developer
 - **Guilherme Tiago:** DBA / Developer
