@@ -11,7 +11,6 @@ routes.get('/teste', async (req: Request, res: Response) => {
 });
 
 
-
 // Login types, interfaces, tudo aí:
 type LoginRequestBody = {
     email: string;

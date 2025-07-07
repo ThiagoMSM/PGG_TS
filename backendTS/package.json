@@ -10,14 +10,17 @@
   "author": "ThiagoMSM",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.11.1",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "firebase-admin": "^13.0.2",
+    "mysql2": "^3.14.1",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0"
+    "@types/express": "^5.0.0",
+    "prisma": "^6.11.1"
   }
 }
