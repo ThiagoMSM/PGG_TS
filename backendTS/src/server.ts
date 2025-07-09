@@ -1,19 +1,7 @@
-import express from 'express';
-import { Request, Response } from 'express';
-import routes from './routes';
-import cors from 'cors';
-const app = express(); 
+import app from './app';
 
-//npm install
 
-app.use(express.json()); 
-app.use(cors());
-app.use(routes);
-
-app.get('/', (req: Request,res:Response) => {
-    res.send('teste');
-});
-
-app.listen(4000, () => {
-    console.log('listening on port 4000');
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
