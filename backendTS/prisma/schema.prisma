@@ -29,7 +29,10 @@ model produtos {
 model categorias{
   id Int @id @default(autoincrement()) @map("c_id")
   nome String @db.VarChar(50) @map("c_nome")
-  subcat Int @map("c_subcat")
+  subcat Int? @map("c_subcat")
+
+  parent    categorias?  @relation("CatToSubcat", fields: [subcat], references: [id]) // o pai tem 1 
+  children  categorias[] @relation("CatToSubcat")                                     // o filho tem N
 
   produtos produtos? // 1:1 relation
 }
