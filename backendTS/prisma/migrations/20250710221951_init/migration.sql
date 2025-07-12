@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE `produtos` (
-    `p_id` INTEGER NOT NULL,
+    `p_id` INTEGER NOT NULL AUTO_INCREMENT,
     `p_nome` VARCHAR(100) NOT NULL,
     `p_descricao` VARCHAR(255) NULL,
     `p_codigo_barras` VARCHAR(255) NULL,

@@ -15,7 +15,8 @@ datasource db {
 }
 
 model produtos {
-  id Int @id @map("p_id")
+  id Int @id @default(autoincrement()) @map("p_id")
+  idopcional String? @db.VarChar(100) @unique @map("p_idopcional")
   nome String @db.VarChar(100) @map("p_nome")
   descricao String? @db.VarChar(255) @map("p_descricao")
   codigoBarras String? @db.VarChar(255) @map("p_codigo_barras")
@@ -90,7 +91,7 @@ model usuarios{
   id Int @id @default(autoincrement()) @map("u_id")
   nome String @db.VarChar(150) @map("u_nome")
   email String @unique @db.VarChar(150) @map("u_email")
-  senha String @db.VarChar(50) @map("u_senha")
+  senha String @db.VarChar(255) @map("u_senha")
   grupoacesso Int @map("u_grupoacesso")
   cpf String @db.VarChar(14) @map("u_cpf")
 
