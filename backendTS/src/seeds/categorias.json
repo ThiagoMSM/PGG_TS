@@ -1,4 +1,17 @@
-[
+[   
     {"nome":"Alimentos","subcat":null},
-    {"nome":"Frios","subcat":1}
+    {"nome":"Frios","subcat":1},
+    {"nome":"Massas","subcat":1},
+    {"nome":"Macarrão","subcat":3},
+    {"nome":"Bebidas","subcat":null},
+    {"nome":"Refrigerantes","subcat":5},
+    {"nome":"Sucos","subcat":5},
+    {"nome":"Águas","subcat":5},
+    {"nome":"Higiene e Limpeza","subcat":null},
+    {"nome":"Limpeza Doméstica","subcat":9},
+    {"nome":"Higiene Pessoal","subcat":9},
+    {"nome":"Hortifruti","subcat":null},
+    {"nome":"Frutas","subcat":12},
+    {"nome":"Verduras","subcat":12},
+    {"nome":"Legumes","subcat":12}
 ]

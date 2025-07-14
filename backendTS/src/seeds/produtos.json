@@ -1,0 +1,46 @@
+[
+  {"idopcional":"01", "nome":"arroz", "descricao":"arroz branco tipo 1", "codigoBarras":null, "qtdeConsumo":50, "catId":1},
+  {"idopcional":"02", "nome":"feijão", "descricao":"feijão preto", "codigoBarras":null, "qtdeConsumo":45, "catId":1},
+
+  {"idopcional":"03", "nome":"queijo prato", "descricao":"queijo fatiado", "codigoBarras":null, "qtdeConsumo":20, "catId":2},
+  {"idopcional":"04", "nome":"presunto", "descricao":"presunto cozido", "codigoBarras":null, "qtdeConsumo":18, "catId":2},
+
+  {"idopcional":"05", "nome":"Nhoque", "descricao":"Inhoque macio", "codigoBarras":null, "qtdeConsumo":25, "catId":3},
+  {"idopcional":"06", "nome":"Massa de Pastel", "descricao":"Massa suave", "codigoBarras":null, "qtdeConsumo":30, "catId":3},
+
+  {"idopcional":"07", "nome":"espaguete", "descricao":"massa de trigo", "codigoBarras":null, "qtdeConsumo":40, "catId":4},
+  {"idopcional":"08", "nome":"Massa de lasanha", "descricao":"sabor gostoso", "codigoBarras":null, "qtdeConsumo":12, "catId":4},
+
+  {"idopcional":"09", "nome":"vinho tinto", "descricao":"vinho seco nacional", "codigoBarras":null, "qtdeConsumo":10, "catId":5},
+  {"idopcional":"010", "nome":"cerveja lata", "descricao":"cerveja pilsen", "codigoBarras":null, "qtdeConsumo":60, "catId":5},
+ 
+  {"idopcional":"011", "nome":"coca-cola", "descricao":"refrigerante 2L", "codigoBarras":null, "qtdeConsumo":28, "catId":6},
+  {"idopcional":"012", "nome":"guaraná", "descricao":"guaraná 2L", "codigoBarras":null, "qtdeConsumo":22, "catId":6},
+ 
+  {"idopcional":"013", "nome":"suco laranja", "descricao":"suco natural", "codigoBarras":null, "qtdeConsumo":19, "catId":7},
+  {"idopcional":"014", "nome":"suco de uva", "descricao":"suco integral", "codigoBarras":null, "qtdeConsumo":11, "catId":7},
+ 
+  {"idopcional":"015", "nome":"água sem gás", "descricao":"garrafa 1,5L", "codigoBarras":null, "qtdeConsumo":55, "catId":8},
+  {"idopcional":"016", "nome":"água com gás", "descricao":"garrafa 500ml", "codigoBarras":null, "qtdeConsumo":20, "catId":8},
+ 
+  {"idopcional":"017", "nome":"detergente", "descricao":"detergente neutro", "codigoBarras":null, "qtdeConsumo":34, "catId":9},
+  {"idopcional":"018", "nome":"sabão em barra", "descricao":"sabão tradicional", "codigoBarras":null, "qtdeConsumo":27, "catId":9},
+ 
+  {"idopcional":"019", "nome":"multiuso", "descricao":"limpa tudo spray", "codigoBarras":null, "qtdeConsumo":17, "catId":10},
+  {"idopcional":"020", "nome":"desinfetante", "descricao":"sabor lavanda", "codigoBarras":null, "qtdeConsumo":25, "catId":10},
+ 
+  {"idopcional":"021", "nome":"sabonete", "descricao":"sabonete glicerinado", "codigoBarras":null, "qtdeConsumo":60, "catId":11},
+  {"idopcional":"022", "nome":"pasta de dente", "descricao":"branqueadora", "codigoBarras":null, "qtdeConsumo":32, "catId":11},
+ 
+  {"idopcional":"023", "nome":"hortelã", "descricao":"folhas frescas", "codigoBarras":null, "qtdeConsumo":15, "catId":12},
+  {"idopcional":"024", "nome":"manga", "descricao":"manga palmer", "codigoBarras":null, "qtdeConsumo":18, "catId":12},
+ 
+  {"idopcional":"025", "nome":"maçã", "descricao":"maçã gala", "codigoBarras":null, "qtdeConsumo":70, "catId":13},
+  {"idopcional":"026", "nome":"banana", "descricao":"banana nanica", "codigoBarras":null, "qtdeConsumo":80, "catId":13},
+ 
+  {"idopcional":"027", "nome":"alface", "descricao":"alface americana", "codigoBarras":null, "qtdeConsumo":25, "catId":14},
+  {"idopcional":"028", "nome":"rúcula", "descricao":"rúcula fresca", "codigoBarras":null, "qtdeConsumo":20, "catId":14},
+ 
+  {"idopcional":"029", "nome":"cenoura", "descricao":"cenoura média", "codigoBarras":null, "qtdeConsumo":35, "catId":15},
+  {"idopcional":"030", "nome":"batata", "descricao":"batata inglesa", "codigoBarras":null, "qtdeConsumo":45, "catId":15}
+]

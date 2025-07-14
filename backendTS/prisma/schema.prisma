@@ -20,7 +20,7 @@ model produtos {
   nome String @db.VarChar(100) @map("p_nome")
   descricao String? @db.VarChar(255) @map("p_descricao")
   codigoBarras String? @db.VarChar(255) @map("p_codigo_barras")
-  qtdeConsumo Int @map("p_qtdeConsumo") 
+  qtdeConsumo Int? @map("p_qtdeConsumo") 
   catId Int? @unique @map("p_catid") 
 
   categoria categorias? @relation(fields: [catId], references: [id], onDelete: SetNull) // 1:1
@@ -40,7 +40,7 @@ model categorias{
 
 model lotes{
   id Int @id @default(autoincrement()) @map("l_id")
-  apelido String @db.VarChar(100) @map("l_apelido")
+  apelido String? @db.VarChar(100) @map("l_apelido")
   datacompra DateTime @db.Date @map("l_datacompra")
   datavalidade DateTime? @db.Date @map("l_datavalidade")
   qtde Int @map("l_qtde")
@@ -48,11 +48,11 @@ model lotes{
   vlrvendaunit Float @map("l_vlrvenda")
   produtoid Int @map("l_produtoid")
   idnota Int @unique @map("l_idnota")
-  idfornecedor Int @map("l_idfornecedor")
+  idfornecedor Int? @map("l_idfornecedor")
 
   produto produtos @relation(fields: [produtoid], references: [id]) // 1:N
   notafiscal notasfiscais @relation(fields: [idnota],references: [id]) // 1:1
-  fornecedor fornecedores @relation(fields: [idfornecedor], references: [id]) // 1:N
+  fornecedor fornecedores? @relation(fields: [idfornecedor], references: [id]) // 1:N
 
   movimento movimentos[]
 }
@@ -107,6 +107,7 @@ model movimentos{
   loteid Int @map("m_loteid")
   idnota Int @map("m_idnota") @unique
   responsavelid Int @map("m_responsavelid")
+  mensagem String? @db.VarChar(255) @map("m_mensagem")
 
   lote lotes @relation(fields: [loteid],references: [id])
   notafiscal notasfiscais @relation(fields: [idnota],references: [id])

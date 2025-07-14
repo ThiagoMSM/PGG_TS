@@ -3,7 +3,9 @@ import bcrypt from 'bcryptjs';
 import categorias from '../src/seeds/categorias.json'
 import usuarios from '../src/seeds/usuarios.json'
 import notasfiscais from '../src/seeds/notasfiscais.json'
+
 async function main() {
+  
   for (const categoria of categorias) {
     await prisma.categorias.create({ data: categoria });
   }
