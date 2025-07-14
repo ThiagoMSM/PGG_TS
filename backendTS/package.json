@@ -1,6 +1,9 @@
 {
   "name": "backendts",
   "version": "1.0.0",
+  "prisma": {
+    "seed": "ts-node ./prisma/seed.ts"
+  },
   "description": "",
   "main": "server.ts",
   "scripts": {
@@ -20,13 +23,13 @@
     "morgan": "^1.10.0",
     "mysql2": "^3.14.1",
     "nodemon": "^3.1.9",
-    "ts-node": "^10.9.2",
     "zod": "^3.25.75"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/morgan": "^1.9.10",
-    "prisma": "^6.11.1"
+    "prisma": "^6.11.1",
+    "ts-node": "^10.9.2"
   }
 }

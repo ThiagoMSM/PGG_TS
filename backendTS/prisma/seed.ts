@@ -1,25 +1,26 @@
 import { prisma } from './index';
-import bcrypt from 'bcryptjs';
 import categorias from '../src/seeds/categorias.json'
 import usuarios from '../src/seeds/usuarios.json'
 import notasfiscais from '../src/seeds/notasfiscais.json'
+import fornecedores from '../src/seeds/fornecedores.json'
+import produtos from '../src/seeds/produtos.json'
+import lotes from '../src/seeds/lotes.json'
+import movimentos from '../src/seeds/movimentos.json'
 
 async function main() {
-  
-  for (const categoria of categorias) {
+  for (const categoria of categorias) { // tabela se auto relaciona, createMany impossibilitaria o auto relacionamento... por isso, loop
     await prisma.categorias.create({ data: categoria });
   }
-  
-  for (const usuario of usuarios) {
-    const salt = await bcrypt.genSalt(10);
-    const hash = await bcrypt.hash(usuario.senha, salt);
-    await prisma.usuarios.create({
-      data: {
-        ...usuario,
-        senha: hash
-      }
-    })
+
+  for (const usuario of usuarios) {  // middleware/extension passwordhash (usuarios.ts) não rodaria em createMany... por isso, loop
+    await prisma.usuarios.create({ data: usuario })
   }
+
+  await prisma.notasfiscais.createMany({ data: notasfiscais });
+  await prisma.fornecedores.createMany({ data: fornecedores });
+  await prisma.produtos.createMany({ data: produtos });
+  await prisma.lotes.createMany({ data: lotes });
+  await prisma.movimentos.createMany({ data: movimentos });
 }
 
 main()

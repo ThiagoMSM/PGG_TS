@@ -4,6 +4,10 @@
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
+// npx prisma migrate dev --name
+// npx prisma migrate reset --skip-seed
+// npx prisma db seed
+
 generator client {
   provider = "prisma-client-js"
   output   = "../src/generated/prisma"
@@ -21,21 +25,21 @@ model produtos {
   descricao String? @db.VarChar(255) @map("p_descricao")
   codigoBarras String? @db.VarChar(255) @map("p_codigo_barras")
   qtdeConsumo Int? @map("p_qtdeConsumo") 
-  catId Int? @unique @map("p_catid") 
+  catId Int? @map("p_catid") 
 
-  categoria categorias? @relation(fields: [catId], references: [id], onDelete: SetNull) // 1:1
-  lote lotes[] // 1:N
+  categoria categorias? @relation(fields: [catId], references: [id], onDelete: SetNull)
+  lote lotes[] // recebe N lotes
 }
 
 model categorias{
   id Int @id @default(autoincrement()) @map("c_id")
-  nome String @db.VarChar(50) @map("c_nome")
+  nome String @db.VarChar(100) @map("c_nome")
   subcat Int? @map("c_subcat")
 
   parent    categorias?  @relation("CatToSubcat", fields: [subcat], references: [id]) // o pai tem 1 
   children  categorias[] @relation("CatToSubcat")                                     // o filho tem N
 
-  produtos produtos? // 1:1 relation
+  produtos produtos[]  // recebe N produtos
 }
 
 model lotes{
@@ -54,16 +58,16 @@ model lotes{
   notafiscal notasfiscais @relation(fields: [idnota],references: [id]) // 1:1
   fornecedor fornecedores? @relation(fields: [idfornecedor], references: [id]) // 1:N
 
-  movimento movimentos[]
+  movimento movimentos[] // recebe N movimentos
 }
 
 model notasfiscais{
   id Int @id @default(autoincrement()) @map("n_id")
-  numero String @db.VarChar(30) @map("n_numero")
-  data DateTime @db.DateTime() @map("n_data")
+  numero String @db.VarChar(44) @map("n_numero")
+  data DateTime @db.Timestamp(3) @map("n_data")
   chave String @db.VarChar(100) @map("n_chave")
   xml String @db.LongText @map("n_xml")
-  emissor String @db.VarChar(20) @map("n_emissor")
+  emissor String @db.VarChar(50) @map("n_emissor")
 
   lote lotes? // 1:1
   movimento movimentos? // 1:1
@@ -72,13 +76,13 @@ model notasfiscais{
 model fornecedores{
   id Int @id @default(autoincrement()) @map("f_id")
   nome String @db.VarChar(100) @map("f_nome")
-  cnpj String @db.VarChar(30) @map("f_cnpj")
+  cnpj String @db.VarChar(14) @map("f_cnpj")
   endereco String @db.VarChar(100) @map("f_endereco")
   telefone String @db.VarChar(20) @map("f_telefone")
   email String @db.VarChar(150) @map("f_email")
   status status @map("f_status")
 
-  lote lotes[]
+  lote lotes[] // recebe N lotes
 }
 
 enum status {
@@ -93,7 +97,7 @@ model usuarios{
   email String @unique @db.VarChar(150) @map("u_email")
   senha String @db.VarChar(255) @map("u_senha")
   grupoacesso Int @map("u_grupoacesso")
-  cpf String @db.VarChar(14) @map("u_cpf")
+  cpf String @db.VarChar(11) @map("u_cpf")
 
   movimento movimentos[]
 }
