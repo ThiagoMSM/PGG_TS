@@ -1,7 +1,7 @@
-[
+export const lotes = [
   {
     "apelido": "Lote 1",
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 180,
     "vlrcompra": 6079.85,
@@ -12,7 +12,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 81,
     "vlrcompra": 1814.11,
@@ -23,7 +23,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 250,
     "vlrcompra": 9531.04,
@@ -34,7 +34,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 23,
     "vlrcompra": 588.12,
@@ -45,8 +45,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-01-25T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-01-25T00:00:00'),
     "qtde": 280,
     "vlrcompra": 11560.67,
     "vlrvendaunit": 48.84,
@@ -56,8 +56,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-06-09T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-01-25T00:00:00'),
     "qtde": 162,
     "vlrcompra": 6543.65,
     "vlrvendaunit": 48.05,
@@ -67,8 +67,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2024-12-17T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-01-25T00:00:00'),
     "qtde": 199,
     "vlrcompra": 5250.15,
     "vlrvendaunit": 29.1,
@@ -78,8 +78,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-06-16T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-06-16T00:00:00'),
     "qtde": 154,
     "vlrcompra": 338.31,
     "vlrvendaunit": 2.64,
@@ -89,8 +89,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-10-13T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 156,
     "vlrcompra": 4261.01,
     "vlrvendaunit": 37.99,
@@ -100,8 +100,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-02-03T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 201,
     "vlrcompra": 647.29,
     "vlrvendaunit": 4.12,
@@ -111,8 +111,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-02-04T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 86,
     "vlrcompra": 2963.49,
     "vlrvendaunit": 41.23,
@@ -122,8 +122,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-04-10T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 27,
     "vlrcompra": 1095.78,
     "vlrvendaunit": 55.36,
@@ -133,8 +133,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-05-24T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 177,
     "vlrcompra": 2793.09,
     "vlrvendaunit": 21.82,
@@ -144,8 +144,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-02-08T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 186,
     "vlrcompra": 8210.82,
     "vlrvendaunit": 52.51,
@@ -155,8 +155,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-03-11T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 295,
     "vlrcompra": 9382.15,
     "vlrvendaunit": 37.18,
@@ -166,8 +166,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-01-29T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 190,
     "vlrcompra": 6450.73,
     "vlrvendaunit": 41.43,
@@ -177,7 +177,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 86,
     "vlrcompra": 3515.28,
@@ -188,7 +188,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 231,
     "vlrcompra": 674.73,
@@ -199,8 +199,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2024-12-03T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 98,
     "vlrcompra": 277.2,
     "vlrvendaunit": 3.8,
@@ -210,8 +210,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-04-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 80,
     "vlrcompra": 3748.75,
     "vlrvendaunit": 54.9,
@@ -221,8 +221,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-05-16T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 54,
     "vlrcompra": 1045.26,
     "vlrvendaunit": 23.2,
@@ -232,8 +232,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-09-24T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 85,
     "vlrcompra": 3877.82,
     "vlrvendaunit": 51.33,
@@ -243,8 +243,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-12-11T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 51,
     "vlrcompra": 286.2,
     "vlrvendaunit": 6.45,
@@ -254,8 +254,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-03-04T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 45,
     "vlrcompra": 550.75,
     "vlrvendaunit": 13.85,
@@ -265,8 +265,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-12-24T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 223,
     "vlrcompra": 7530.34,
     "vlrvendaunit": 45.91,
@@ -276,7 +276,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 162,
     "vlrcompra": 2717.82,
@@ -287,7 +287,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 92,
     "vlrcompra": 4105.73,
@@ -298,7 +298,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 94,
     "vlrcompra": 2833.89,
@@ -309,7 +309,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 177,
     "vlrcompra": 974.73,
@@ -320,7 +320,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 86,
     "vlrcompra": 1245.05,
@@ -331,7 +331,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 38,
     "vlrcompra": 224.15,
@@ -342,7 +342,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 147,
     "vlrcompra": 5376.69,
@@ -353,7 +353,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 43,
     "vlrcompra": 1137.94,
@@ -364,7 +364,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 102,
     "vlrcompra": 4320.78,
@@ -375,7 +375,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 277,
     "vlrcompra": 1482.64,
@@ -386,7 +386,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 39,
     "vlrcompra": 1461.94,
@@ -397,7 +397,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 117,
     "vlrcompra": 653.18,
@@ -408,7 +408,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 38,
     "vlrcompra": 166.87,
@@ -419,7 +419,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 252,
     "vlrcompra": 5221.03,
@@ -430,7 +430,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 244,
     "vlrcompra": 10492.86,
@@ -441,7 +441,7 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
     "datavalidade": null,
     "qtde": 221,
     "vlrcompra": 9012.94,
@@ -452,8 +452,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-11-22T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 164,
     "vlrcompra": 5201.83,
     "vlrvendaunit": 40.39,
@@ -463,8 +463,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-06-02T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 20,
     "vlrcompra": 849.42,
     "vlrvendaunit": 48.99,
@@ -474,8 +474,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-05-26T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 176,
     "vlrcompra": 1034.22,
     "vlrvendaunit": 7.38,
@@ -485,8 +485,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-05-30T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 207,
     "vlrcompra": 9807.57,
     "vlrvendaunit": 60.41,
@@ -496,8 +496,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-03-07T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 113,
     "vlrcompra": 4775.03,
     "vlrvendaunit": 53.03,
@@ -507,8 +507,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-08-08T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 42,
     "vlrcompra": 1875.11,
     "vlrvendaunit": 51.68,
@@ -518,8 +518,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2024-10-31T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 240,
     "vlrcompra": 5003.54,
     "vlrvendaunit": 26.47,
@@ -529,8 +529,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-10-17T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 93,
     "vlrcompra": 3987.68,
     "vlrvendaunit": 50.32,
@@ -540,8 +540,8 @@
   },
   {
     "apelido": null,
-    "datacompra": "2024-10-01T00:00:00",
-    "datavalidade": "2025-07-28T00:00:00",
+    "datacompra": new Date('2024-10-01T00:00:00'),
+    "datavalidade": new Date('2025-07-28T00:00:00'),
     "qtde": 99,
     "vlrcompra": 4011.26,
     "vlrvendaunit": 52.86,

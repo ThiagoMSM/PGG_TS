@@ -1,10 +1,10 @@
 import { prisma } from './index';
 import categorias from '../src/seeds/categorias.json'
 import usuarios from '../src/seeds/usuarios.json'
-import notasfiscais from '../src/seeds/notasfiscais.json'
+import {notasfiscais} from '../src/seeds/notasfiscais'
 import { fornecedores } from '../src/seeds/fornecedores';
 import produtos from '../src/seeds/produtos.json'
-import lotes from '../src/seeds/lotes.json'
+import {lotes} from '../src/seeds/lotes'
 import { movimentos } from '../src/seeds/movimentos'
 
 async function main() {
