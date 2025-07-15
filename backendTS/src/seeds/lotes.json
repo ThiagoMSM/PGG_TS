@@ -6,7 +6,7 @@
     "qtde": 180,
     "vlrcompra": 6079.85,
     "vlrvendaunit": 43.21,
-    "produtoId": 1,
+    "produtoid": 1,
     "idnota": 2,
     "idfornecedor": 1
   },
@@ -17,7 +17,7 @@
     "qtde": 81,
     "vlrcompra": 1814.11,
     "vlrvendaunit": 31.2,
-    "produtoId": 1,
+    "produtoid": 1,
     "idnota": 3,
     "idfornecedor": 4
   },
@@ -28,7 +28,7 @@
     "qtde": 250,
     "vlrcompra": 9531.04,
     "vlrvendaunit": 46.7,
-    "produtoId": 2,
+    "produtoid": 2,
     "idnota": 4,
     "idfornecedor": 4
   },
@@ -39,7 +39,7 @@
     "qtde": 23,
     "vlrcompra": 588.12,
     "vlrvendaunit": 32.39,
-    "produtoId": 2,
+    "produtoid": 2,
     "idnota": 5,
     "idfornecedor": 4
   },
@@ -50,7 +50,7 @@
     "qtde": 280,
     "vlrcompra": 11560.67,
     "vlrvendaunit": 48.84,
-    "produtoId": 3,
+    "produtoid": 3,
     "idnota": 6,
     "idfornecedor": 1
   },
@@ -61,7 +61,7 @@
     "qtde": 162,
     "vlrcompra": 6543.65,
     "vlrvendaunit": 48.05,
-    "produtoId": 3,
+    "produtoid": 3,
     "idnota": 7,
     "idfornecedor": 2
   },
@@ -72,7 +72,7 @@
     "qtde": 199,
     "vlrcompra": 5250.15,
     "vlrvendaunit": 29.1,
-    "produtoId": 3,
+    "produtoid": 3,
     "idnota": 8,
     "idfornecedor": 1
   },
@@ -83,7 +83,7 @@
     "qtde": 154,
     "vlrcompra": 338.31,
     "vlrvendaunit": 2.64,
-    "produtoId": 4,
+    "produtoid": 4,
     "idnota": 9,
     "idfornecedor": null
   },
@@ -94,7 +94,7 @@
     "qtde": 156,
     "vlrcompra": 4261.01,
     "vlrvendaunit": 37.99,
-    "produtoId": 4,
+    "produtoid": 4,
     "idnota": 10,
     "idfornecedor": 1
   },
@@ -105,7 +105,7 @@
     "qtde": 201,
     "vlrcompra": 647.29,
     "vlrvendaunit": 4.12,
-    "produtoId": 4,
+    "produtoid": 4,
     "idnota": 11,
     "idfornecedor": 1
   },
@@ -116,7 +116,7 @@
     "qtde": 86,
     "vlrcompra": 2963.49,
     "vlrvendaunit": 41.23,
-    "produtoId": 5,
+    "produtoid": 5,
     "idnota": 12,
     "idfornecedor": null
   },
@@ -127,7 +127,7 @@
     "qtde": 27,
     "vlrcompra": 1095.78,
     "vlrvendaunit": 55.36,
-    "produtoId": 6,
+    "produtoid": 6,
     "idnota": 13,
     "idfornecedor": 2
   },
@@ -138,7 +138,7 @@
     "qtde": 177,
     "vlrcompra": 2793.09,
     "vlrvendaunit": 21.82,
-    "produtoId": 7,
+    "produtoid": 7,
     "idnota": 14,
     "idfornecedor": 4
   },
@@ -149,7 +149,7 @@
     "qtde": 186,
     "vlrcompra": 8210.82,
     "vlrvendaunit": 52.51,
-    "produtoId": 7,
+    "produtoid": 7,
     "idnota": 15,
     "idfornecedor": 4
   },
@@ -160,7 +160,7 @@
     "qtde": 295,
     "vlrcompra": 9382.15,
     "vlrvendaunit": 37.18,
-    "produtoId": 8,
+    "produtoid": 8,
     "idnota": 16,
     "idfornecedor": 1
   },
@@ -171,7 +171,7 @@
     "qtde": 190,
     "vlrcompra": 6450.73,
     "vlrvendaunit": 41.43,
-    "produtoId": 8,
+    "produtoid": 8,
     "idnota": 17,
     "idfornecedor": 1
   },
@@ -182,7 +182,7 @@
     "qtde": 86,
     "vlrcompra": 3515.28,
     "vlrvendaunit": 49.67,
-    "produtoId": 9,
+    "produtoid": 9,
     "idnota": 18,
     "idfornecedor": 4
   },
@@ -193,7 +193,7 @@
     "qtde": 231,
     "vlrcompra": 674.73,
     "vlrvendaunit": 3.49,
-    "produtoId": 10,
+    "produtoid": 10,
     "idnota": 19,
     "idfornecedor": 4
   },
@@ -204,7 +204,7 @@
     "qtde": 98,
     "vlrcompra": 277.2,
     "vlrvendaunit": 3.8,
-    "produtoId": 11,
+    "produtoid": 11,
     "idnota": 20,
     "idfornecedor": 2
   },
@@ -215,7 +215,7 @@
     "qtde": 80,
     "vlrcompra": 3748.75,
     "vlrvendaunit": 54.9,
-    "produtoId": 11,
+    "produtoid": 11,
     "idnota": 21,
     "idfornecedor": 1
   },
@@ -226,7 +226,7 @@
     "qtde": 54,
     "vlrcompra": 1045.26,
     "vlrvendaunit": 23.2,
-    "produtoId": 12,
+    "produtoid": 12,
     "idnota": 22,
     "idfornecedor": 2
   },
@@ -237,7 +237,7 @@
     "qtde": 85,
     "vlrcompra": 3877.82,
     "vlrvendaunit": 51.33,
-    "produtoId": 12,
+    "produtoid": 12,
     "idnota": 23,
     "idfornecedor": 2
   },
@@ -248,7 +248,7 @@
     "qtde": 51,
     "vlrcompra": 286.2,
     "vlrvendaunit": 6.45,
-    "produtoId": 13,
+    "produtoid": 13,
     "idnota": 24,
     "idfornecedor": null
   },
@@ -259,7 +259,7 @@
     "qtde": 45,
     "vlrcompra": 550.75,
     "vlrvendaunit": 13.85,
-    "produtoId": 13,
+    "produtoid": 13,
     "idnota": 25,
     "idfornecedor": 2
   },
@@ -270,7 +270,7 @@
     "qtde": 223,
     "vlrcompra": 7530.34,
     "vlrvendaunit": 45.91,
-    "produtoId": 14,
+    "produtoid": 14,
     "idnota": 26,
     "idfornecedor": null
   },
@@ -281,7 +281,7 @@
     "qtde": 162,
     "vlrcompra": 2717.82,
     "vlrvendaunit": 23.24,
-    "produtoId": 15,
+    "produtoid": 15,
     "idnota": 27,
     "idfornecedor": 3
   },
@@ -292,7 +292,7 @@
     "qtde": 92,
     "vlrcompra": 4105.73,
     "vlrvendaunit": 49.13,
-    "produtoId": 16,
+    "produtoid": 16,
     "idnota": 28,
     "idfornecedor": null
   },
@@ -303,7 +303,7 @@
     "qtde": 94,
     "vlrcompra": 2833.89,
     "vlrvendaunit": 34.83,
-    "produtoId": 17,
+    "produtoid": 17,
     "idnota": 29,
     "idfornecedor": 3
   },
@@ -314,7 +314,7 @@
     "qtde": 177,
     "vlrcompra": 974.73,
     "vlrvendaunit": 7.26,
-    "produtoId": 17,
+    "produtoid": 17,
     "idnota": 30,
     "idfornecedor": 1
   },
@@ -325,7 +325,7 @@
     "qtde": 86,
     "vlrcompra": 1245.05,
     "vlrvendaunit": 16.9,
-    "produtoId": 18,
+    "produtoid": 18,
     "idnota": 31,
     "idfornecedor": 4
   },
@@ -336,7 +336,7 @@
     "qtde": 38,
     "vlrcompra": 224.15,
     "vlrvendaunit": 7.95,
-    "produtoId": 18,
+    "produtoid": 18,
     "idnota": 32,
     "idfornecedor": 4
   },
@@ -347,7 +347,7 @@
     "qtde": 147,
     "vlrcompra": 5376.69,
     "vlrvendaunit": 49.78,
-    "produtoId": 18,
+    "produtoid": 18,
     "idnota": 33,
     "idfornecedor": 1
   },
@@ -358,7 +358,7 @@
     "qtde": 43,
     "vlrcompra": 1137.94,
     "vlrvendaunit": 34.66,
-    "produtoId": 19,
+    "produtoid": 19,
     "idnota": 34,
     "idfornecedor": 4
   },
@@ -369,7 +369,7 @@
     "qtde": 102,
     "vlrcompra": 4320.78,
     "vlrvendaunit": 56.12,
-    "produtoId": 20,
+    "produtoid": 20,
     "idnota": 35,
     "idfornecedor": 3
   },
@@ -380,7 +380,7 @@
     "qtde": 277,
     "vlrcompra": 1482.64,
     "vlrvendaunit": 7.28,
-    "produtoId": 20,
+    "produtoid": 20,
     "idnota": 36,
     "idfornecedor": null
   },
@@ -391,7 +391,7 @@
     "qtde": 39,
     "vlrcompra": 1461.94,
     "vlrvendaunit": 44.32,
-    "produtoId": 20,
+    "produtoid": 20,
     "idnota": 37,
     "idfornecedor": 3
   },
@@ -402,7 +402,7 @@
     "qtde": 117,
     "vlrcompra": 653.18,
     "vlrvendaunit": 6.9,
-    "produtoId": 21,
+    "produtoid": 21,
     "idnota": 38,
     "idfornecedor": 1
   },
@@ -413,7 +413,7 @@
     "qtde": 38,
     "vlrcompra": 166.87,
     "vlrvendaunit": 6.07,
-    "produtoId": 21,
+    "produtoid": 21,
     "idnota": 39,
     "idfornecedor": null
   },
@@ -424,7 +424,7 @@
     "qtde": 252,
     "vlrcompra": 5221.03,
     "vlrvendaunit": 23.67,
-    "produtoId": 21,
+    "produtoid": 21,
     "idnota": 40,
     "idfornecedor": 2
   },
@@ -435,7 +435,7 @@
     "qtde": 244,
     "vlrcompra": 10492.86,
     "vlrvendaunit": 54.53,
-    "produtoId": 22,
+    "produtoid": 22,
     "idnota": 41,
     "idfornecedor": 2
   },
@@ -446,7 +446,7 @@
     "qtde": 221,
     "vlrcompra": 9012.94,
     "vlrvendaunit": 47.41,
-    "produtoId": 22,
+    "produtoid": 22,
     "idnota": 42,
     "idfornecedor": null
   },
@@ -457,7 +457,7 @@
     "qtde": 164,
     "vlrcompra": 5201.83,
     "vlrvendaunit": 40.39,
-    "produtoId": 23,
+    "produtoid": 23,
     "idnota": 43,
     "idfornecedor": null
   },
@@ -468,7 +468,7 @@
     "qtde": 20,
     "vlrcompra": 849.42,
     "vlrvendaunit": 48.99,
-    "produtoId": 24,
+    "produtoid": 24,
     "idnota": 44,
     "idfornecedor": 2
   },
@@ -479,7 +479,7 @@
     "qtde": 176,
     "vlrcompra": 1034.22,
     "vlrvendaunit": 7.38,
-    "produtoId": 25,
+    "produtoid": 25,
     "idnota": 45,
     "idfornecedor": null
   },
@@ -490,7 +490,7 @@
     "qtde": 207,
     "vlrcompra": 9807.57,
     "vlrvendaunit": 60.41,
-    "produtoId": 26,
+    "produtoid": 26,
     "idnota": 46,
     "idfornecedor": null
   },
@@ -501,7 +501,7 @@
     "qtde": 113,
     "vlrcompra": 4775.03,
     "vlrvendaunit": 53.03,
-    "produtoId": 27,
+    "produtoid": 27,
     "idnota": 47,
     "idfornecedor": null
   },
@@ -512,7 +512,7 @@
     "qtde": 42,
     "vlrcompra": 1875.11,
     "vlrvendaunit": 51.68,
-    "produtoId": 28,
+    "produtoid": 28,
     "idnota": 48,
     "idfornecedor": 4
   },
@@ -523,7 +523,7 @@
     "qtde": 240,
     "vlrcompra": 5003.54,
     "vlrvendaunit": 26.47,
-    "produtoId": 28,
+    "produtoid": 28,
     "idnota": 49,
     "idfornecedor": 4
   },
@@ -534,7 +534,7 @@
     "qtde": 93,
     "vlrcompra": 3987.68,
     "vlrvendaunit": 50.32,
-    "produtoId": 29,
+    "produtoid": 29,
     "idnota": 50,
     "idfornecedor": 3
   },
@@ -545,7 +545,7 @@
     "qtde": 99,
     "vlrcompra": 4011.26,
     "vlrvendaunit": 52.86,
-    "produtoId": 30,
+    "produtoid": 30,
     "idnota": 51,
     "idfornecedor": null
   }

@@ -1,7 +1,8 @@
-[
+import { tipo } from "../generated/prisma"
+export const movimentos =[
   {
     "qtde": 180,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 1,
@@ -11,7 +12,7 @@
   },
   {
     "qtde": 81,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 2,
@@ -21,7 +22,7 @@
   },
   {
     "qtde": 250,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 3,
@@ -31,7 +32,7 @@
   },
   {
     "qtde": 23,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 4,
@@ -41,7 +42,7 @@
   },
   {
     "qtde": 280,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 5,
@@ -51,7 +52,7 @@
   },
   {
     "qtde": 162,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 6,
@@ -61,7 +62,7 @@
   },
   {
     "qtde": 199,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 7,
@@ -71,7 +72,7 @@
   },
   {
     "qtde": 154,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 8,
@@ -81,7 +82,7 @@
   },
   {
     "qtde": 156,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 9,
@@ -91,7 +92,7 @@
   },
   {
     "qtde": 201,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 10,
@@ -101,7 +102,7 @@
   },
   {
     "qtde": 86,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 11,
@@ -111,7 +112,7 @@
   },
   {
     "qtde": 27,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 12,
@@ -121,7 +122,7 @@
   },
   {
     "qtde": 177,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 13,
@@ -131,7 +132,7 @@
   },
   {
     "qtde": 186,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 14,
@@ -141,7 +142,7 @@
   },
   {
     "qtde": 295,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 15,
@@ -151,7 +152,7 @@
   },
   {
     "qtde": 190,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 16,
@@ -161,7 +162,7 @@
   },
   {
     "qtde": 86,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 17,
@@ -171,7 +172,7 @@
   },
   {
     "qtde": 231,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 18,
@@ -181,7 +182,7 @@
   },
   {
     "qtde": 98,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 19,
@@ -191,7 +192,7 @@
   },
   {
     "qtde": 80,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 20,
@@ -201,7 +202,7 @@
   },
   {
     "qtde": 54,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 21,
@@ -211,7 +212,7 @@
   },
   {
     "qtde": 85,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 22,
@@ -221,7 +222,7 @@
   },
   {
     "qtde": 51,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 23,
@@ -231,7 +232,7 @@
   },
   {
     "qtde": 45,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 24,
@@ -241,7 +242,7 @@
   },
   {
     "qtde": 223,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 25,
@@ -251,7 +252,7 @@
   },
   {
     "qtde": 162,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 26,
@@ -261,7 +262,7 @@
   },
   {
     "qtde": 92,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 27,
@@ -271,7 +272,7 @@
   },
   {
     "qtde": 94,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 28,
@@ -281,7 +282,7 @@
   },
   {
     "qtde": 177,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 29,
@@ -291,7 +292,7 @@
   },
   {
     "qtde": 86,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 30,
@@ -301,7 +302,7 @@
   },
   {
     "qtde": 38,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 31,
@@ -311,7 +312,7 @@
   },
   {
     "qtde": 147,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 32,
@@ -321,7 +322,7 @@
   },
   {
     "qtde": 43,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 33,
@@ -331,7 +332,7 @@
   },
   {
     "qtde": 102,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 34,
@@ -341,7 +342,7 @@
   },
   {
     "qtde": 277,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 35,
@@ -351,7 +352,7 @@
   },
   {
     "qtde": 39,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 36,
@@ -361,7 +362,7 @@
   },
   {
     "qtde": 117,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 37,
@@ -371,7 +372,7 @@
   },
   {
     "qtde": 38,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 38,
@@ -381,7 +382,7 @@
   },
   {
     "qtde": 252,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 39,
@@ -391,7 +392,7 @@
   },
   {
     "qtde": 244,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 40,
@@ -401,7 +402,7 @@
   },
   {
     "qtde": 221,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 41,
@@ -411,7 +412,7 @@
   },
   {
     "qtde": 164,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 42,
@@ -421,7 +422,7 @@
   },
   {
     "qtde": 20,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 43,
@@ -431,7 +432,7 @@
   },
   {
     "qtde": 176,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 44,
@@ -441,7 +442,7 @@
   },
   {
     "qtde": 207,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 45,
@@ -451,7 +452,7 @@
   },
   {
     "qtde": 113,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 46,
@@ -461,7 +462,7 @@
   },
   {
     "qtde": 42,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 47,
@@ -471,7 +472,7 @@
   },
   {
     "qtde": 240,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 48,
@@ -481,7 +482,7 @@
   },
   {
     "qtde": 93,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 49,
@@ -491,7 +492,7 @@
   },
   {
     "qtde": 99,
-    "tipo": "ENTRADA",
+    "tipo": tipo.ENTRADA,
     "cliente": "",
     "data": "2024-10-01T00:00:00",
     "loteid": 50,
