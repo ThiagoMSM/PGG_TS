@@ -3,7 +3,6 @@ import { obterUsuario } from "../controllers/usuario";
 
 const router = express.Router();
 
-router.get("/:id", obterUsuario)
-
+router.get("/:id", obterUsuario);
 
 export default router

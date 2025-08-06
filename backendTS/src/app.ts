@@ -2,14 +2,16 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import express from 'express';
-import { Request, Response } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import helmet from 'helmet';
-import path from 'path';
 import usuarioRouter from './routers/usuarioRouter';
+import authRouter from './routers/authRouter';
+import path from 'path';
+import { errorMiddleware } from './middlewares/errorMiddleware';
+import { authMiddleware } from './middlewares/authMiddleware';
 
-//npm install
 const app = express(); 
 
 
@@ -26,11 +28,16 @@ app.get(/^\/(?!api).*/, (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
+apiRouter.use("/auth", authRouter);
+
+
+apiRouter.use(authMiddleware)
+apiRouter.use("/usuario", usuarioRouter);
 apiRouter.get('/', (req: Request,res:Response) => {
     res.send('teste');
 });
 
-apiRouter.use("/usuario", usuarioRouter);
-
 app.use("/api", apiRouter);
+app.use(errorMiddleware)
 export default app;
+
