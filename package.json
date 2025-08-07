@@ -1,0 +1,14 @@
+{
+  "name": "ts_vite",
+  "version": "1.0.0",
+  "author": "ThiagoMSM",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+    "scripts": {
+    "start:backend": "pnpm --filter @rigeltech/backendts run dev",
+    "start:frontend": "pnpm --filter pgg_ts_vite run dev"
+  }
+}
