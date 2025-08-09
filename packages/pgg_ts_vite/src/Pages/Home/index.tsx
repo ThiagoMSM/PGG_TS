@@ -1,7 +1,7 @@
-
+// = index
 function Home() {
   return (
-    <div>Home</div>
+    <div>Sidney Scaccio nos beats</div>
   )
 }
 

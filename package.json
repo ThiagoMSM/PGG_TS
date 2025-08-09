@@ -9,6 +9,6 @@
   ],
     "scripts": {
     "start:backend": "pnpm --filter @rigeltech/backendts run dev",
-    "start:frontend": "pnpm --filter pgg_ts_vite run dev"
+    "start:frontend": "pnpm --filter @rigeltech/pgg_ts_vite run dev"
   }
 }

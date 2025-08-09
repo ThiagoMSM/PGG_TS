@@ -1,5 +1,5 @@
 // Vejam essa rota (PagLogin e seus componentes) como um tutorial básico de TypeScript
-
+// = index
 import "./PagLogin.css"; // CSS
 import Logo from "../../Assets/FundoLoginWeb1921x1416AZUL.png"; // Fundo da página
 
@@ -10,7 +10,7 @@ import LoginForm from "./Components/LoginForm";
 import RecuperarForm from "./Components/RecuperarForm";
 import FooterLogin from "./Components/FooterLogin";
 
-function Home() {
+function PagLogin() {
   return (
     <div className="PagLogin">
       <div className="container">
@@ -32,4 +32,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default PagLogin;

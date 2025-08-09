@@ -1,4 +1,4 @@
-import { z } from "zod";
+import z from "";
 
 const envSchema = z.object({
   MODE: z.enum(["development", "production", "test"]).default("development"),
