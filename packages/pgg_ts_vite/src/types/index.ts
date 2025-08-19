@@ -1,4 +1,11 @@
-import { loginSchema } from "../../validators/authValidator";
-import {z} from 'zod';
+import { AxiosResponse } from "axios";
+import { usuarioFrontEnd } from "@shared/types";
 
-export type loginType = z.infer<typeof loginSchema>;
+
+export interface responseUser extends AxiosResponse {
+    data: {
+        message: string;
+        user?: usuarioFrontEnd;
+        token?: string;
+    }
+}

@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": [
+        "../shared/*"
+      ]
+    },
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": [
@@ -17,12 +23,6 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-    // "baseUrl": ".", /* Specify the base directory to resolve non-relative module names. */
-    // "paths": {
-    //   "@shared/*": [
-    //     "../shared/*"
-    //   ]
-    // },
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

@@ -1,7 +1,13 @@
 import { api } from "../../config/api";
-import { loginType } from '../../types/index'
+import { loginBody } from "@shared/types"
+import { responseUser } from "src/types";
 
-const login = async ({ email, senha }: loginType) => {
-    const response = await api.post("/auth/login", {email,senha})
-    response.data.
+export const login = async ({ email, senha }: loginBody) => {
+    const response: responseUser = await api.post("/auth/login", { email, senha })
+    return {
+        status: response.status,
+        message: response.data.message,
+        user: response.data.user,
+        token: response.data.token,
+    }
 }

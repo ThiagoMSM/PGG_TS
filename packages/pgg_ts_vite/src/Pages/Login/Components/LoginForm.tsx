@@ -2,7 +2,7 @@ import { useState } from "react"
 import "../PagLogin.css";
 import ButtonCarregar from "../../../Components/Buttons/ButtonCarregar";
 import { notificar } from "../../../Components/Toasts/Toast";
-
+import EfetuarLogin from "../Functions/EfetuarLogin";
 
 function LoginForm() {
 
@@ -13,17 +13,17 @@ function LoginForm() {
     // variavel de controle
     const [carregando, setCarregando] = useState<boolean>(false);
 
-    const response = {
-        status: 200
-    }
+
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
         e.preventDefault();
-
         setCarregando(true)
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        setCarregando(false);
+        console.log(email)
+        console.log(password)
+        const response = await EfetuarLogin({ email: email, senha: password })
 
-        notificar({ status: response.status, mensagem: "Servidor nem existe menó kkkkk" })
+
+        setCarregando(false);
+        notificar({ status: response.status, mensagem: response.message })
 
     };
 

@@ -5,5 +5,5 @@ import { usuarioFrontendSchema } from '../validators/userValidator';
 
 export type loginBody = z.infer<typeof loginSchema>;
 export type usuarioFrontEnd = z.infer<typeof usuarioFrontendSchema>;
-//
+
 //export interface tokenType extends JwtPayload { id: number }

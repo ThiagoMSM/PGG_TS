@@ -1,4 +1,4 @@
-import z from "";
+import * as z from "@shared/zod/z";
 
 const envSchema = z.object({
   MODE: z.enum(["development", "production", "test"]).default("development"),

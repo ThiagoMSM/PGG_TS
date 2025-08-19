@@ -1,50 +1,21 @@
+import { loginBody } from "@shared/types"
+import { login } from "../../../services/usuario/auth";
 
-import axios, { AxiosResponse,AxiosError } from 'axios';
-
-type loginProps = {
-    email: string,
-    password: string
-};
-
-type UserData = {
-    CPF: string;
-    Celular: string;
-    Email: string;
-    Grupo_Acesso: number,
-    Nome: string;
-};
-
-type responseType = AxiosResponse<{
-    message: string,
-    id?: string,
-    userData?: UserData,
-    error?: string,
-}>
-
-type resposta = {
-    msg: string,
-    style: string
-}
-
-async function EfetuarLogin({ email, password }: loginProps) { //todo return vai pro frontend
+async function EfetuarLogin({ email, senha }: loginBody) {
     try {
-        const response: responseType = await axios.post('http://localhost:4000/Login', {
-            email: email,
-            password: password
-        });
-        const msg: string = response.data.message;
-
-        const objRetorno:resposta = {msg: msg, style: "mensagem-acerto"}
-        return objRetorno;
-
-    } catch (error: AxiosError|any) {
-        if(error.response){
-            const errorMsg = error?.response?.data?.message;
-            const objRetorno:resposta = {msg: errorMsg || "Erro desconhecido", style: "mensagem-erro"};
-            return objRetorno;
+        const response = await login({ email, senha })
+        return {
+            user: response.user,
+            token: response.token,
+            status: response.status ?? 200,
+            message: "Login efetuado com sucesso",
+        };
+    } catch (error: any) {
+        console.log(error)
+        return {
+            status: 400,
+            message: error?.response?.data?.message ?? "Erro inesperado ao efetuar login",
         }
-        const objRetorno:resposta = {msg:"Erro de conexão, ou erro interno de servidor",  style: "mensagem-erro"};
-        return objRetorno;
     }
 }
 
